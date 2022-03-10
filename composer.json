@@ -1,0 +1,41 @@
+{
+    "name": "trinhnk/youtubeservice",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/trinhnk/youtubeservice",
+    "keywords": ["Laravel", "YoutubeService"],
+    "require": {
+        "illuminate/support": "~9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Trinhnk\\YoutubeService\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Trinhnk\\YoutubeService\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Trinhnk\\YoutubeService\\YoutubeServiceServiceProvider"
+            ],
+            "aliases": {
+                "YoutubeService": "Trinhnk\\YoutubeService\\Facades\\YoutubeService"
+            }
+        }
+    }
+}
